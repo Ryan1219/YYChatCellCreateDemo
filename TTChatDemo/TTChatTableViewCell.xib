@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="TTChatTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="201102161637" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ui-Cm-5gv">
+                        <rect key="frame" x="130" y="10" width="200" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="VQe-9U-vk4"/>
+                            <constraint firstAttribute="height" constant="16" id="t46-bE-HFi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mayi_home_cefa" translatesAutoresizingMaskIntoConstraints="NO" id="IfI-JA-k91">
+                        <rect key="frame" x="20" y="36" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="SCg-5E-4l0"/>
+                            <constraint firstAttribute="height" constant="45" id="TR8-A4-Fjr"/>
+                        </constraints>
+                    </imageView>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mayi_home_guang_i" translatesAutoresizingMaskIntoConstraints="NO" id="V8D-Nj-s6c">
+                        <rect key="frame" x="395" y="36" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="056-tT-3O9"/>
+                            <constraint firstAttribute="width" constant="45" id="twH-iO-cSy"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etr-6K-l9Y">
+                        <rect key="frame" x="75" y="36" width="60" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="I6S-e6-Jmb"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="JBl-y5-4tW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <state key="normal" backgroundImage="mayi_service_answer">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N5-Y3-RGo">
+                        <rect key="frame" x="325" y="36" width="60" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="6m8-jv-Nxa"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="pqG-BP-wPz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <state key="normal" backgroundImage="mayi_service_question">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V8D-Nj-s6c" firstAttribute="top" secondItem="6ui-Cm-5gv" secondAttribute="bottom" constant="10" id="1ND-el-zlP"/>
+                    <constraint firstItem="V8D-Nj-s6c" firstAttribute="leading" secondItem="7N5-Y3-RGo" secondAttribute="trailing" constant="10" id="57E-Um-nia"/>
+                    <constraint firstItem="etr-6K-l9Y" firstAttribute="top" secondItem="IfI-JA-k91" secondAttribute="top" id="5TD-Md-MaX"/>
+                    <constraint firstItem="IfI-JA-k91" firstAttribute="top" secondItem="6ui-Cm-5gv" secondAttribute="bottom" constant="10" id="Cx5-7I-xtk"/>
+                    <constraint firstItem="IfI-JA-k91" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="IAN-nD-swX"/>
+                    <constraint firstItem="6ui-Cm-5gv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="MMN-qw-gTU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="V8D-Nj-s6c" secondAttribute="trailing" constant="12" id="Qde-7n-QJq"/>
+                    <constraint firstItem="6ui-Cm-5gv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="Xmn-e3-p0T"/>
+                    <constraint firstItem="etr-6K-l9Y" firstAttribute="leading" secondItem="IfI-JA-k91" secondAttribute="trailing" constant="10" id="y1q-m1-er8"/>
+                    <constraint firstItem="V8D-Nj-s6c" firstAttribute="top" secondItem="7N5-Y3-RGo" secondAttribute="top" id="y47-ff-ycy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImageView" destination="V8D-Nj-s6c" id="dJa-CI-qnT"/>
+                <outlet property="otherHeadImageView" destination="IfI-JA-k91" id="ZAg-F1-Nr7"/>
+                <outlet property="otherTextBtn" destination="etr-6K-l9Y" id="ymO-Bz-q79"/>
+                <outlet property="textBtn" destination="7N5-Y3-RGo" id="p0B-Wc-pk0"/>
+                <outlet property="timeLabel" destination="6ui-Cm-5gv" id="QJy-Vm-Mmx"/>
+            </connections>
+            <point key="canvasLocation" x="95" y="80"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mayi_home_cefa" width="53" height="53"/>
+        <image name="mayi_home_guang_i" width="82" height="63"/>
+        <image name="mayi_service_answer" width="12" height="18"/>
+        <image name="mayi_service_question" width="14" height="19"/>
+    </resources>
+</document>
